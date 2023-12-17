@@ -1,0 +1,100 @@
+.coaching-session img{
+    width: 70%;
+}
+
+
+.coaching-session h3{
+    color: #dea203;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+.coaching-session h4{
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 19px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.coaching-session p{    
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+
+/* button  */
+.coaching-session-btn {
+    font-size: 17px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    background-color: #DEA303;
+    color: white !important;
+    border-bottom: 3px solid black;
+    border-radius: 5px;
+    padding: 6px 18px 6px 18px;
+    font-family: "Montserrat", Sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.coaching-session-btn::before {
+    content: '';
+    z-index: -1; 
+    position: absolute;
+    top: 0;
+    left: 0% !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; 
+    background-color: #000000;
+    transition: left 0.4s ease-in-out;
+}
+
+.coaching-session-btn:hover::before {
+    left: 0;
+}
+
+.coaching-session-btn:hover {
+    background-color: #000000;
+}
+/* button end  */
+  
+.my-box-shedow{
+    box-shadow: 0 0 12px 0px rgb(228, 227, 227);
+    border-radius: 10px;
+}
+
+
+@media (max-width: 992px) {
+    
+    .coaching-session img{
+        width: 95% !important;
+    }
+    
+    .coaching-session h3{
+        font-size: 21px;
+     
+    }
+    
+    .coaching-session h4{
+    
+        font-size: 14px;
+    }
+    
+    .coaching-session p{
+        font-size: 16px;
+    }
+    }

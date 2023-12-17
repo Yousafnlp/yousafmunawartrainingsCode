@@ -1,0 +1,384 @@
+.nav-link{
+    color: #ffffff  !important;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    padding: 4px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 400px) {
+    .nav-link{
+    font-size: 12px; 
+    letter-spacing: 1px;
+}
+}
+
+
+.nav-link:hover{
+    background-color: black;
+    
+}
+.my-nav{
+    background-color: #dea303;
+    border-bottom: 3px solid black;
+}
+
+.bg-blak{
+    background-color: #000000;
+}
+
+.drop-nav{
+    background-color: #dea303;
+}
+
+.nav-item{
+    margin: 0px 0px;
+}
+
+
+.top-tagline{
+    background-color: black;
+    max-width: 1920px;
+}
+
+
+  
+.top-tagline p{
+    color: #FFFFFF;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.bottom-tagline p{
+    color: #FFFFFF;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    /* font-weight: 500; */
+    text-transform: uppercase;
+}
+
+.react-sm-icomn-mob{
+    color: #DEA203;
+    font-size: 16px;
+}
+
+.smIcon-mob {
+    
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border: 1.58px solid #DEA203;;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.smIcon-mob:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
+.nav-logo-w{
+    width: 130px;
+}
+
+
+@media (min-width: 400px) {
+    .nav-logo-w{
+        width: 200px;
+    }
+}
+
+
+@media (min-width: 450px) {
+    .nav-logo-w{
+        width: 200px;
+    }
+}
+
+.react-sm-icomn{
+    color: #DEA203;
+    font-size: 23px;
+}
+
+.smIcon {
+    
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border: 3px solid #DEA203;;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-pading{
+    padding-left: 0px !important;
+}
+.smIcon:hover {
+    background-color: #000000;
+    cursor: pointer;
+}
+
+
+
+.smIcon-footer {
+    
+    display: flex;
+    width: 48px;
+    height: 48px;
+    border: 3px solid #DEA203;;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.smIcon-footer:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.br-b-w{
+    border-bottom: 1px dashed white;
+}
+
+
+.br-r-w{
+    border-right: 0.5px dashed white;
+}
+
+
+
+
+
+.dropdown-toggle::after {
+    margin-left: 0.4em !important;
+    border-top: 0.4em solid !important;
+}
+
+
+
+
+
+
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #000000 !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+
+
+    background-color: #000000 !important;
+}
+
+.mob-nav-d{
+    position: absolute;
+    background-color: #dea203;
+    z-index: 1000;
+    width: 100%;
+    margin-top: 11px;
+    margin-left: -9px;
+
+}
+
+.nav-btn-phn{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.nav-col-icon{
+    color: white;
+    font-size: 32px;
+}
+
+.fixed-mt{
+    margin-top: 82px !important;
+}
+.fixed-mt-pc{
+    margin-top: 35px !important;
+}
+
+@media (min-width:  325px) {
+
+    
+.fixed-mt{
+    margin-top: 62px !important;
+}
+
+    
+}
+
+
+
+@media (min-width:  637px) {
+
+    
+    .fixed-mt{
+        margin-top: 42px !important;
+    }
+    
+        
+    }
+    ::-webkit-scrollbar {
+        height: 15px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 4px grey; 
+        /* border-radius: px; */
+        
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #DEA203; 
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        height: 20px;
+        
+        background: #ffbb01; 
+      }
+      
+
+      .footer-links{
+        color: #ffffff  !important;
+        font-size: 13px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
+      .footer-links2{
+        color: #ffffff  !important;
+        font-size: 13px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
+
+      .footer-links:hover{
+        text-decoration: underline;
+        color: rgba(245, 245, 245, 0.513)  !important;
+        
+      }
+
+      
+      .footer-links-heading{
+        color: #ffffff  !important;
+        font-size: 17px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
+
+      .footer-img{
+        filter: invert();
+      }
+
+      @media (max-width: 992px) {
+            
+      .footer-links-heading{
+        margin-top: 3rem
+      }
+        
+      }
+
+      .whatsap-parent-mob {
+        z-index: 10000;
+        position: fixed;
+        bottom: 12px;
+        right: 12px;
+      }
+      .whatsap-parent {
+         z-index: 10000;
+         position: fixed;
+         bottom: 10px;
+         right: 10px;
+       }
+
+      .wa-btn{
+        border: 1px solid transparent;
+        background: transparent;
+      }
+
+      .p-c{
+        cursor: pointer;
+      }
+
+
+
+      
+/* button  */
+.coaching-session-btn2 {
+    margin-top: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    background-color: #DEA303;
+    color: white !important;
+    border-radius: 5px;
+    border: 2px solid white;
+    padding: 15px 40px 15px 40px;
+    font-family: "Montserrat", Sans-serif;
+    letter-spacing: 3px;
+
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.coaching-session-btn2::before {
+    content: '';
+    z-index: -1; 
+    position: absolute;
+    top: 0;
+    left: 0% !important;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; 
+    background-color: #ffffff;
+    transition: left 0.4s ease-in-out;
+}
+
+.coaching-session-btn2:hover::before {
+    left: 0;
+}
+
+.coaching-session-btn2:hover {
+    color: black !important;
+    background-color: #ffffff;
+}
+/* button end  */
+  
+
+.parent-nav{
+    height: 100vh;
+    position: absolute;
+    z-index: 310;
+    top: 0px;
+}
+
+
+
+
+
+
+      
+/* button  */

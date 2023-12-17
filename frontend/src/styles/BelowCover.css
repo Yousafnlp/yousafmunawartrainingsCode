@@ -1,0 +1,43 @@
+.divider-1{
+    width: 100%;
+    height: 2px;
+    background-color: whitesmoke;
+}
+
+
+.belowcover-title1{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.belowcover-title2{
+    color: white;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+.belowcover-parent{
+    background-color: #dea303;
+    
+}
+
+@media (max-width: 424px) {
+    
+
+.belowcover-title1{
+    font-size: 15px;
+}
+
+.belowcover-title2{
+    font-size: 13px;
+}
+
+}
+
+

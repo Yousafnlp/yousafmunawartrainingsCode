@@ -1,0 +1,21 @@
+.mycounter{
+    font-size: 50px;
+    background-color: #DEA203;
+    color: white;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.counter-parent{
+    background-color: #DEA203;
+
+}
+
+.counter-parent h5{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 19px;
+    letter-spacing: 2px;
+}

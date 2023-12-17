@@ -1,0 +1,14 @@
+
+@media (min-width: 1920px) {
+    .custom-container {
+        max-width: 1920px !important;
+    }
+}
+
+.custom-container {
+    width: 100%;
+}
+
+ul{
+    padding-left: 1rem !important;
+}

@@ -1,0 +1,24 @@
+.head-testi{
+    color: #ffffff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    text-shadow: 1px 1px 14px rgba(0, 0, 0, 0.5);
+
+}
+
+.my-black-bg{
+    background-color: black;
+}
+
+@media (max-width: 992px) {
+
+    .head-testi{
+    letter-spacing: 3px; 
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+}

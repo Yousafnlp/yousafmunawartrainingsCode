@@ -1,0 +1,140 @@
+.group-coaching-session img{
+    width: 40%;
+}
+
+
+.group-coaching-session h3{
+    color: #dea203;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+.group-coaching-session h4{
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+
+    font-size: 19px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.group-coaching-session p{
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    text-align: justify;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+
+/* button  */
+.group-coaching-session button {
+    font-size: 17px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    background-color: #DEA303;
+    color: white;
+    border-bottom: 3px solid black;
+    border-radius: 5px;
+    padding: 6px 18px 6px 18px;
+    font-family: "Montserrat", Sans-serif;
+    letter-spacing: 3px;
+    font-weight: 500;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.group-coaching-session button::before {
+    content: '';
+    z-index: -1; 
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px; 
+    background-color: #000000;
+    transition: left 0.3s ease-in-out;
+}
+
+.group-coaching-session button:hover::before {
+    left: 0;
+}
+
+.group-coaching-session button:hover {
+    background-color: #000000;
+}
+/* button end  */
+  
+.my-box-shedow{
+    box-shadow: 0 0 12px 0px rgb(228, 227, 227);
+    border-radius: 10px;
+}
+
+.eppm-img{
+    width: 35% !important;
+}
+
+.experiance h3{
+    color: #dea203;
+    font-family: sans-serif;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.experiance ul li{
+color: #000000;
+font-family: 'Open Sans', sans-serif;
+text-align: justify;
+font-size: 15px;
+}
+
+
+
+.my-sm-underline{
+    width: 100%;
+    height:2px;
+    background-color: #dea203;
+}
+
+
+
+@media (max-width: 992px) {
+    
+.eppm-img{
+    width: 95% !important;
+}
+
+.group-coaching-session h3{
+    font-size: 21px;
+ 
+}
+
+.group-coaching-session h4{
+
+    font-size: 14px;
+}
+
+.group-coaching-session p{
+    font-size: 16px;
+}
+
+.experiance ul li{
+    font-size: 16px;
+}
+
+
+.experiance h3{
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+}

@@ -1,0 +1,24 @@
+/* Define the keyframes for the animation */
+@keyframes scaleUp {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply the animation to the image */
+  .image-class {
+    animation: scaleUp 4s infinite;
+    /* Change '2s' to adjust the animation duration */
+  }
+  .image-class2 {
+    animation: scaleUp 2s infinite;
+    /* Change '2s' to adjust the animation duration */
+  }
+  

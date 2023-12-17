@@ -1,0 +1,29 @@
+
+.swiper-trainings {
+    width: 600px;
+  }
+  
+  .slides-trainings {
+  
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slides-trainings img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  filter: drop-shadow(12px 0px 20px #ffbe0a);
+    
+  }
+  
+  
+
+  
+.mycover-trainings{
+background-color: #dea203;   
+}

@@ -1,0 +1,96 @@
+.my-home-bg{
+    background-color: #dea203;
+}
+
+.sub-heading-workshop{
+    color: #ffffff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 35px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #dea203;
+}
+
+.divder-2{
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+}
+
+.workshop-img{
+    width: 100%;
+}
+
+.my-p{
+    
+    background-color: #dea203;
+    width: 100%;
+    padding-top: 1rem;
+}
+
+.main-heading-3{
+
+    color: #ffffff;
+    letter-spacing: 6px;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 33px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+  }
+
+
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+  .parent-c-vid{
+    width: 90%;
+  } 
+
+  .testimonial-btn button{
+    font-size: 16px;
+    letter-spacing: 1px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    padding: 8px 26px 8px 26px;
+    font-family: "Montserrat", Sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.testimonial-btn button:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.my-m{
+    margin-top: 6rem;
+}
+
+
+@media (max-width: 992px) {
+
+    .main-heading-3{
+        font-size: 27px;
+    }
+
+}

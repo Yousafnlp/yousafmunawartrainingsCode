@@ -1,0 +1,35 @@
+
+.swiper-cover-AllServicesSwiper {
+    width: 500px;
+  }
+  
+  .slides {
+  
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100% !important;
+    /* width: 200px; */
+  }
+  
+  .slides img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+ .my-home-c{
+    background-color: #dea203;
+  }
+@media  (max-width: 992px) {
+ 
+   
+  .swiper-cover-AllServicesSwiper {
+    width: 100%;
+  }
+  }
+  

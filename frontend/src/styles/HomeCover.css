@@ -1,0 +1,48 @@
+
+.swiper-cover {
+  width: 450px;
+}
+
+.slides {
+
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100% !important;
+  /* width: 200px; */
+}
+
+.slides img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.myimg{
+  filter: drop-shadow(12px 0px 20px #976f01);
+  width: 300px;
+}
+
+.mycover{
+  background: rgb(255,202,62);
+background: linear-gradient(230deg, rgba(255,202,62,1) 0%, rgba(255,198,50,1) 52%, rgba(255,186,3,1) 100%);
+   padding: 50px 0px;
+}
+
+@media screen and (max-width: 500px) {
+ 
+   
+.swiper-cover {
+  width: 90%;
+}
+}
+
+@media screen and (max-width: 350px) {
+  .myimg{
+    width: 95%;
+  }
+  }

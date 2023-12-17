@@ -1,0 +1,167 @@
+  
+  .mycover{
+    background: rgb(255,202,62);
+  background: linear-gradient(230deg, rgba(255,202,62,1) 0%, rgba(255,198,50,1) 52%, rgba(255,186,3,1) 100%);
+     padding-bottom: 30px;
+     padding-top: 40px;
+  }
+
+  .sessions-m-heading{
+
+    letter-spacing: 2px;
+        color: #dea203;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 35px;
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+ 
+    .sessions-m-divider{
+        height: 4px;
+        width: 100%;
+        background-color: #dea203;
+    }
+
+  .my-session-img-cover{
+    width: 500px;
+  }
+
+  .my-session-img{
+    width: 600px;
+  }
+
+  .session-tagline{
+    color: #ffffff;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 23px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: #dea203;
+
+  }
+
+
+/* button  */
+.reg-btn button {
+  font-size: 17px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  background-color: #DEA303;
+  color: white;
+  border-bottom: 3px solid black;
+  border-radius: 5px;
+  padding: 6px 18px 6px 18px;
+  font-family: "Montserrat", Sans-serif;
+  letter-spacing: 3px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.reg-btn button::before {
+  content: '';
+  z-index: -1; 
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px; 
+  background-color: #ffffff;
+  transition: left 0.3s ease-in-out;
+}
+
+.reg-btn button::before {
+  left: 0;
+}
+
+.reg-btn button:hover {
+  background-color: #ffffff;
+}
+
+
+/* button end  */
+
+
+.reg-btn span{
+  color: #FFFFFF;
+  font-family: "Arial", Sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+  .reg-btn{
+    background-color: #000000;
+  }
+/* 
+
+
+  .reg-btn button{
+    font-size: 15px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    background-color: #DEA303;
+    color: white;
+    border-radius: 2px;
+    padding: 5px 15px 5px 15px;
+    font-family: "Montserrat", Sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.reg-btn button:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.reg-btn span{
+  color: #FFFFFF;
+  font-family: "Arial", Sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+ */
+
+
+
+
+@media (max-width: 992px) {
+
+  .my-session-img-cover{
+    width: 90%;
+  }
+
+  .my-session-img{
+    width: 93%;
+  }
+
+  
+  .session-tagline{
+
+    font-size: 20px;
+   
+  }
+    
+  .sessions-m-heading{
+    letter-spacing: 1px;
+        font-size: 30px;
+    }
+ 
+  }
+
+  
+
+@media (max-width: 383px) {
+  .sessions-m-heading{
+    font-size: 24px;
+}
+
+}
+
+
