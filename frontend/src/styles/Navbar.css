@@ -8,18 +8,34 @@
     letter-spacing: 2px;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 992px) {
     .nav-link{
-    font-size: 12px; 
-    letter-spacing: 1px;
+    font-size: 13px; 
+    letter-spacing: 0.5px;
 }
 }
+
+.my-drawer-top{
+    top: 54px !important;
+}
+
+
+@media (max-width:  325px) {
+
+    .my-drawer-top{
+        top: 74px !important;
+    }
+    
+}
+
 
 
 .nav-link:hover{
     background-color: black;
     
 }
+
+
 .my-nav{
     background-color: #dea303;
     border-bottom: 3px solid black;
@@ -378,7 +394,18 @@
 
 
 
+#root{
+    display: flex;
+    justify-content: center;
+}
 
-
-      
+      .fix {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1030;
+            width: 100%;
+        
+      }
 /* button  */

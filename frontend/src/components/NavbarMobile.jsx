@@ -9,12 +9,26 @@ import { useState } from 'react';
 import "../styles/Navbar.css"
 import Whatsapp from './Whatsapp';
 
+
+// import component 👇
+import Drawer from 'react-modern-drawer'
+
+//import styles 👇
+import 'react-modern-drawer/dist/index.css'
+
+
+
 function NavbarMobile() {
 
   const [sessionsActice, setsessionsActice] = useState(false);
   const [trainingsActice, settrainingsActice] = useState(false);
   const [showDropdownF, setShowDropdownF] = useState(false);
   const [showDropdownS, setShowDropdownS] = useState(false);
+
+  const [isOpen, setIsOpen] = React.useState(false)
+  const toggleDrawer = () => {
+    setIsOpen((prevState) => !prevState)
+  }
 
   const handleMouseEnterF = () => {
     setShowDropdownF(true);
@@ -31,7 +45,7 @@ function NavbarMobile() {
 
   let navigate = useNavigate();
   const navigatorHome = () => {
-      navigate('/')
+    navigate('/')
   }
 
 
@@ -94,14 +108,20 @@ function NavbarMobile() {
 
       </div>
 
-
-      <nav className="navbar  navbar-expand-lg navbar-light justify-content-start my-nav p-2 " >
+      <nav className="navbar  navbar-expand-lg navbar-light  my-nav p-2 " >
         <div className="  p-0">
-          <button className="nav-btn-phn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <IoOptionsSharp className='nav-col-icon' />
 
+          <button onClick={toggleDrawer} className='nav-btn-phn'>
+            <IoOptionsSharp className='nav-col-icon' />
           </button>
-          <div className="collapse navbar-collapse mob-nav-d " id="navbarSupportedContent">
+          <Drawer
+            open={isOpen}
+            onClose={toggleDrawer}
+            direction='right'
+            className='bla bla bla my-drawer-top'
+            style={{ backgroundColor: "#dea203", width: "310px" }}
+          >
+
             <ul className="navbar-nav mx-auto  mb-0 mb-lg-0 py-2">
 
 
@@ -111,7 +131,7 @@ function NavbarMobile() {
                   className={({ isActive }) =>
                     isActive ? "nav-link py-2 ps-2  bg-blak" : "nav-link py-2 ps-2"}
 
-                  aria-current="page"  target='-blank'  to="/">HOME</NavLink>
+                  aria-current="page" target='-blank' to="/">HOME</NavLink>
               </li>
 
               <li className="nav-item br-b-w m-0 me-4 list-unstyled ">
@@ -134,7 +154,7 @@ function NavbarMobile() {
                         <NavLink
                           className={({ isActive }) =>
                             isActive ? "dropdown-item br-b-w nav-link py-2 ps-2  bg-blak" : "dropdown-item br-b-w nav-link py-2 ps-2"}
-                          target='-blank'  to="/wellnesscoaching">
+                          target='-blank' to="/wellnesscoaching">
                           WELLNESS COACHING SESSION
                         </NavLink>
                       </li>
@@ -142,7 +162,7 @@ function NavbarMobile() {
                         <NavLink
                           className={({ isActive }) =>
                             isActive ? "dropdown-item br-b-w nav-link py-2 ps-2  bg-blak" : "dropdown-item br-b-w nav-link py-2 ps-2"}
-                          target='-blank'  to="/successcoaching">
+                          target='-blank' to="/successcoaching">
                           SUCCESS COACHING SESSION
                         </NavLink>
                       </li>
@@ -150,7 +170,7 @@ function NavbarMobile() {
                         <NavLink
                           className={({ isActive }) =>
                             isActive ? "dropdown-item br-b-w nav-link py-2 ps-2  bg-blak" : "dropdown-item br-b-w nav-link py-2 ps-2"}
-                          target='-blank'  to="/erasingpainfulpastmemories">
+                          target='-blank' to="/erasingpainfulpastmemories">
                           ERASING PAINFUL PAST MEMORIES
                         </NavLink>
                       </li>
@@ -171,7 +191,7 @@ function NavbarMobile() {
                         <NavLink
                           className={({ isActive }) =>
                             isActive ? "dropdown-item br-b-w nav-link py-2 ps-2  bg-blak" : "dropdown-item br-b-w nav-link py-2 ps-2"}
-                           target='-blank'  to="/reshapeyourlife">
+                          target='-blank' to="/reshapeyourlife">
                           RESHAPE YOUR LIFE
                         </NavLink>
                       </li>
@@ -179,7 +199,7 @@ function NavbarMobile() {
                         <NavLink
                           className={({ isActive }) =>
                             isActive ? "dropdown-item br-b-w nav-link py-2 ps-2  bg-blak" : "dropdown-item br-b-w nav-link py-2 ps-2"}
-                           target='-blank'  to="/doubledoseprodctivity">
+                          target='-blank' to="/doubledoseprodctivity">
                           DOUBLE DOSE PRODUCTIVITY
                         </NavLink>
                       </li>
@@ -197,13 +217,125 @@ function NavbarMobile() {
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? "nav-link py-2 ps-2  bg-blak" : "nav-link  py-2 ps-2"}
-                   target='-blank'  to="/contact" tabindex="-1" aria-disabled="true">CONTACT</NavLink>
+                  target='-blank' to="/contact" tabindex="-1" aria-disabled="true">CONTACT</NavLink>
               </li>
               <li className="nav-item m-0 me-4 list-unstyled ">
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? "nav-link py-2 ps-2  bg-blak" : "nav-link py-2 ps-2"}
-                   target='-blank'  to="/testimonials" tabindex="-1" aria-disabled="true">TESTIMONIALS</NavLink>
+                  target='-blank' to="/testimonials" tabindex="-1" aria-disabled="true">TESTIMONIALS</NavLink>
+              </li>
+            </ul>
+          </Drawer>
+
+
+          {/* <button className="nav-btn-phn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> */}
+          {/* <IoOptionsSharp className='nav-col-icon' /> */}
+
+          {/* </button> */}
+          <div className="collapse navbar-collapse mob-nav-d " id="navbarSupportedContent">
+            <ul className="navbar-nav mx-auto  mb-0 mb-lg-0 py-2">
+
+
+              <li className="nav-item br-b-w m-0 me-4 list-unstyled ">
+
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link py-2 ps-2  bg-blak" : "nav-link py-2 ps-2"}
+
+                  aria-current="page" target='-blank' to="/">HOME</NavLink>
+              </li>
+
+              <li className="nav-item br-b-w m-0 me-4 list-unstyled ">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link py-2 ps-2  bg-blak" : "nav-link py-2 ps-2"}
+                  to="/about" tabindex="-1" aria-disabled="true">ABOUT</NavLink>
+              </li>
+
+
+
+              <li className="nav-item br-b-w m-0 me-4 list-unstyled ">
+                <div className=' d-block'>
+                  <div className={`dropdown  ${showDropdownF ? 'show' : ''}`} onClick={handleMouseEnterF}  >
+                    <div className={`nav-link py-2 ps-2 dropdown-toggle ${sessionsActice ? 'bg-blak' : ''}   `} role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      VICTORY COACHINGS
+                    </div>
+                    <ul className={`dropdown-menu ps-0 ${showDropdownF ? 'show' : ''} drop-nav  position-relative mb-2 w-100`} aria-labelledby="dropdownMenuLink">
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive ? "dropdown-item br-b-w nav-link py-2 ps-2  bg-blak" : "dropdown-item br-b-w nav-link py-2 ps-2"}
+                          target='-blank' to="/wellnesscoaching">
+                          WELLNESS COACHING SESSION
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive ? "dropdown-item br-b-w nav-link py-2 ps-2  bg-blak" : "dropdown-item br-b-w nav-link py-2 ps-2"}
+                          target='-blank' to="/successcoaching">
+                          SUCCESS COACHING SESSION
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive ? "dropdown-item br-b-w nav-link py-2 ps-2  bg-blak" : "dropdown-item br-b-w nav-link py-2 ps-2"}
+                          target='-blank' to="/erasingpainfulpastmemories">
+                          ERASING PAINFUL PAST MEMORIES
+                        </NavLink>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+
+
+              <li className="nav-item br-b-w m-0 me-4 list-unstyled ">
+                <div className=' d-block'>
+                  <div className={`dropdown  ${showDropdownS ? 'show' : ''} `} onClick={handleMouseEnterS}  >
+                    <div className={`nav-link py-2 ps-2 dropdown-toggle ${trainingsActice ? 'bg-blak' : ''}   `} to="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                      TRAINING PROGRAMS
+                    </div>
+                    <ul className={`dropdown-menu ps-0 ${showDropdownS ? 'show' : ''} drop-nav position-relative mb-2 w-100`} aria-labelledby="dropdownMenuLink">
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive ? "dropdown-item br-b-w nav-link py-2 ps-2  bg-blak" : "dropdown-item br-b-w nav-link py-2 ps-2"}
+                          target='-blank' to="/reshapeyourlife">
+                          RESHAPE YOUR LIFE
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive ? "dropdown-item br-b-w nav-link py-2 ps-2  bg-blak" : "dropdown-item br-b-w nav-link py-2 ps-2"}
+                          target='-blank' to="/doubledoseprodctivity">
+                          DOUBLE DOSE PRODUCTIVITY
+                        </NavLink>
+                      </li>
+
+
+                    </ul>
+                  </div>
+                </div>
+
+              </li>
+
+
+
+              <li className="nav-item br-b-w m-0 me-4 list-unstyled ">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link py-2 ps-2  bg-blak" : "nav-link  py-2 ps-2"}
+                  target='-blank' to="/contact" tabindex="-1" aria-disabled="true">CONTACT</NavLink>
+              </li>
+              <li className="nav-item m-0 me-4 list-unstyled ">
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive ? "nav-link py-2 ps-2  bg-blak" : "nav-link py-2 ps-2"}
+                  target='-blank' to="/testimonials" tabindex="-1" aria-disabled="true">TESTIMONIALS</NavLink>
               </li>
             </ul>
           </div>

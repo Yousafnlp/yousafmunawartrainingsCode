@@ -70,11 +70,12 @@ function Navbar() {
         <Whatsapp/>
       </div>
 
-      <div className='text-center fixed-top top-tagline p-1 m-0'>
+<div className="p">
+      <div className='text-center fix top-tagline p-1 m-0'>
       <p className='m-0 py-1'>
         ACHIEVE VICTORY WITH YOUSAF 🏆🔥 Book Your Free Consultation Call Now! 📞💼 </p>
          </div>
-
+         </div>
       <div className="row w-100 fixed-mt-pc">
         <div class="col-3 d-flex justify-content-center align-items-center">
 

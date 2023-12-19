@@ -6,7 +6,7 @@ const nav = useNavigate()
     useEffect(()=>{
         nav('/')
 
-    },[])
+    })
   return (
     <div>
     
